@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Възможност за жилищно строителство — Бенковски</title>
+    <meta name="description" content="Имот в с. Бенковски — 15 мин. от Пловдив и 1 ч. 30 мин. от София. Променено предназначение за жилищно строителство, 3 парцела, предвиден достъп, осигурени съгласувания за ВиК и ел., включен архитектурен пакет.">
+    <meta property="og:title" content="Възможност за жилищно строителство — Бенковски">
+    <meta property="og:description" content="Имот в с. Бенковски — 15 мин. от Пловдив и 1 ч. 30 мин. от София. Променено предназначение за жилищно строителство, 3 парцела, предвиден достъп, осигурени съгласувания за ВиК и ел., включен архитектурен пакет.">
+    <meta property="og:type" content="website">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #1a2744;
+            --navy-light: #2d3e5f;
+            --white: #ffffff;
+            --gray-bg: #f8f9fa;
+            --gray-text: #6c757d;
+            --gray-border: #dee2e6;
+            --gold: #d4a574;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background: var(--white);
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-border);
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 70px;
+            gap: 24px;
+        }
+
+        .nav-logo {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.22em;
+            line-height: 1.05;
+            white-space: pre-line;
+            text-decoration: none;
+        }
+
+        .nav-logo::first-line {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            color: var(--navy);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-shrink: 0;
+        }
+
+        .lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switch button {
+            background: transparent;
+            border: 1px solid var(--gray-border);
+            padding: 6px 10px;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--navy);
+            transition: all 0.2s;
+        }
+
+        .lang-switch button.active {
+            background: var(--navy);
+            color: white;
+            border-color: var(--navy);
+        }
+
+        .lang-switch .sep {
+            opacity: 0.6;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 22px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .nav-toggle {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--navy);
+        }
+
+        @media (min-width: 768px) {
+            .nav-container {
+                justify-content: space-between;
+            }
+
+            .nav-links {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                gap: 22px;
+            }
+
+            .nav-right {
+                order: 3;
+                margin-left: auto;
+            }
+
+            .nav-links {
+                order: 2;
+            }
+
+            .nav-logo {
+                order: 1;
+                flex-shrink: 0;
+            }
+
+            .nav-toggle {
+                display: none;
+            }
+        }
+
+        .nav-links.active {
+            display: flex;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            flex-direction: column;
+            padding: 20px;
+            border-bottom: 1px solid var(--gray-border);
+            gap: 15px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0.95;
+            margin-bottom: 40px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-block;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            background: #c49563;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 165, 116, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--navy);
+        }
+
+        .btn-navy {
+            background: var(--navy);
+            color: var(--white);
+            border: 1px solid var(--navy);
+        }
+
+        .btn-navy:hover {
+            background: var(--navy-light);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--navy);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--gray-text);
+            text-align: center;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Deal Snapshot */
+        .snapshot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 0 auto 30px;
+            max-width: 1050px;
+        }
+
+        @media (max-width: 1024px) {
+            .snapshot-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .snapshot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .snapshot-card {
+            background: var(--gray-bg);
+            padding: 28px 22px;
+            border-radius: 12px;
+            border: 1px solid rgba(26, 39, 68, 0.10);
+            box-shadow: 0 6px 18px rgba(26, 39, 68, 0.06);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 140px;
+            transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+        }
+
+        .snapshot-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 26px rgba(26, 39, 68, 0.10);
+            border-color: rgba(212, 165, 116, 0.55);
+        }
+
+        .snapshot-card h3 {
+            font-size: 13px;
+            color: var(--gray-text);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 8px;
+        }
+
+        .snapshot-card p {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .snapshot-note {
+            font-size: 14px;
+            color: var(--gray-text);
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Proof & Full Pack */
+        .proof-section {
+            background: var(--gray-bg);
+        }
+
+        .proof-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .proof-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 30px;
+            bottom: -25px;
+            width: 2px;
+            background: var(--gray-border);
+        }
+
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        .timeline-marker {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--gold);
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-content h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .checklist-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+            align-items: start;
+        }
+
+        .checklist-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .checklist-text {
+            flex: 1;
+            font-size: 15px;
+            color: var(--navy);
+        }
+
+        .engagement-note {
+            background: var(--navy);
+            color: var(--white);
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        .cta-center {
+            text-align: center;
+        }
+
+        /* Location */
+        .location-map {
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: grid;
+            gap: 16px;
+        }
+
+        .location-map img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            border: 2px solid var(--gray-border);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        .location-card {
+            background: var(--gray-bg);
+            padding: 26px 22px;
+            border-radius: 12px;
+            border: 1px solid rgba(26, 39, 68, 0,10);
+            box-shadow: 0 6px 18px rgba(26, 39, 68, 0.06);
+            text-align: center;
+
+            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 26px rgba(26, 39, 68, 0.10);
+            border-color: rgba(212, 165, 116, 0.55); /* gold hint */
+        }
+
+        .location-card h3 {
+            font-size: 16px;
+            color: var(--navy);
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            margin-bottom: 10px;
+        }
+
+        .location-card p {
+            font-size: 14.5px;
+            color: var(--gray-text);
+            line-height: 1.6;
+            max-width: 34ch;
+            margin: 0 auto;
+        }
+
+        /* Gallery Teaser */
+        .gallery-teaser {
+            background: var(--gray-bg);
+        }
+
+        .thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-placeholder {
+            aspect-ratio: 4/3;
+            background: var(--white);
+            border: 2px dashed var(--gray-border);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: var(--gray-text);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .gallery-placeholder:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .gallery-note {
+            font-size: 14px;
+            color: var(--gray-text);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Contact */
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin: 30px 0;
+            font-size: 16px;
+            color: var(--gray-text);
+        }
+
+        .contact-info a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 3000;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 1200px;
+            max-height: 90vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-image-container {
+            position: relative;
+            width: 100%;
+            max-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 8px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .lightbox-caption {
+            color: var(--white);
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .lightbox-counter {
+            color: var(--gray-text);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            background: var(--white);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            z-index: 10;
+        }
+
+        .lightbox-close:hover {
+            background: var(--gold);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .lightbox-nav:hover {
+            background: var(--gold);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .lightbox-nav.prev {
+            left: 20px;
+        }
+
+        .lightbox-nav.next {
+            right: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--white);
+            max-width: 550px;
+            width: 100%;
+            border-radius: 8px;
+            padding: 40px;
+            position: relative;
+            margin: auto;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--gray-text);
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--navy);
+        }
+
+        .modal h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--navy);
+        }
+
+        .modal p {
+            font-size: 15px;
+            color: var(--gray-text);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--navy);
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--gray-border);
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .form-checkbox input {
+            margin-top: 4px;
+        }
+
+        .form-checkbox label {
+            font-size: 14px;
+            color: var(--gray-text);
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 14px;
+            background: var(--gold);
+            color: var(--navy);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-submit:hover {
+            background: #c49563;
+        }
+
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .success-message.active {
+            display: block;
+        }
+
+        .success-message h3 {
+            font-size: 24px;
+            color: var(--navy);
+            margin-bottom: 15px;
+        }
+
+        .success-message p {
+            font-size: 16px;
+            color: var(--gray-text);
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+
+            .modal-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo" data-i18n="brand.name">Benkovski
+RESIDENCES</div>
+            <div class="nav-right">
+                <button class="nav-toggle" onclick="toggleNav()">☰</button>
+                <div class="lang-switch">
+                    <button type="button" id="langBg" data-lang-btn="bg">BG</button>
+                    <span class="sep">|</span>
+                    <button type="button" id="langEn" data-lang-btn="en">EN</button>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#overview" onclick="closeNav()" data-i18n="nav.overview">Overview</a></li>
+                <li><a href="#deal-snapshot" onclick="closeNav()" data-i18n="nav.snapshot">Deal Snapshot</a></li>
+                <li><a href="#proof" onclick="closeNav()" data-i18n="nav.proof">Proof & Full Pack</a></li>
+                <li><a href="#location" onclick="closeNav()" data-i18n="nav.location">Location</a></li>
+                <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+                <li><a href="#contact" onclick="closeNav()" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="overview" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Residential Development Opportunity — Benkovski</h1>
+            <p data-i18n="hero.subtitle">Located in selo benkovski, 15 minutes from Plovdiv & 1 hour from Sofia. Rezoned to residential, subdivided into 3 plots with road access, utility approvals secured, architect concept package included.</p>
+            <div class="hero-buttons">
+                <a href="gallery.html" class="btn btn-secondary" data-i18n="hero.btn.gallery">View Gallery</a>
+                <button class="btn btn-primary" onclick="openModal()" data-i18n="hero.btn.request">Request Full Pack</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Snapshot -->
+    <section id="deal-snapshot" class="container">
+        <h2 class="section-title" data-i18n="snapshot.title">Deal Snapshot</h2>
+        <div class="snapshot-grid">
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.location.label">Location</h3>
+                <p data-i18n-html="snapshot.location.value_html">15min from Plovdiv<br>1h30min from Sofia</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.zoning.label">Zoning</h3>
+                <p data-i18n="snapshot.zoning.value">Residential (rezoned from agricultural)</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.lotsize.label">Lot Size (SQM)</h3>
+                <p data-i18n="snapshot.lotsize.value">2500</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.asking.label">Asking Price (Total)</h3>
+                <p data-i18n="snapshot.asking.value">€200K</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.pricepersqm.label">Price per SQM</h3>
+                <p data-i18n="snapshot.pricepersqm.value">€80</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.plots.label">Plots</h3>
+                <p data-i18n="snapshot.plots.value">3 plots</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.road.label">Road Access</h3>
+                <p data-i18n="snapshot.road.value">Planned</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.utilities.label">Water and Electricity Approval</h3>
+                <p data-i18n="snapshot.utilities.value">Secured & documented</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.buildpermit.label">Building Permit</h3>
+                <p data-i18n="snapshot.buildpermit.value">Secured & documented</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.arch.label">Architecture</h3>
+                <p data-i18n="snapshot.arch.value">Renderings + 2-floor blueprints</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.status.label">Status</h3>
+                <p data-i18n="snapshot.status.value">Ready for buyer / development partner</p>
+            </div>
+            <div class="snapshot-card">
+                <h3 data-i18n="snapshot.docs.label">Documentation</h3>
+                <p data-i18n="snapshot.docs.value">Full Pack available on request</p>
+            </div>
+        </div>
+        <p class="snapshot-note" data-i18n="snapshot.note">Detailed documentation available after request.</p>
+    </section>
+
+    <!-- Proof & Full Pack -->
+    <section id="proof" class="proof-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="proof.title">De-risking Completed + Full Pack (On Request)</h2>
+            
+            <div class="proof-content">
+                <!-- Left: Timeline -->
+                <div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.1">Agricultural → Residential rezoning completed</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.2">Parcel subdivided into 3 plots</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.3">Road access defined for each plot</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.4">Water approval/permit secured</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.5">Electricity approval/permit secured</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.6">Building permit secured</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="proof.timeline.7">Architectural renderings + 2-floor detached home blueprints completed</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Checklist -->
+                <div>
+                    <h3 style="margin-bottom: 25px; font-size: 20px; color: var(--navy);" data-i18n="proof.checklist.title">Included in the Full Pack</h3>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.1">Rezoning decision documents</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.2">Cadastral extracts / plot identifiers</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.3">Subdivision documentation + road access plan</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.4">Utility approvals: water + electricity</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.5">Building permit</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.6">Full renderings set</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.7">Floor plans (2 floors)</div>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-icon">✓</div>
+                        <div class="checklist-text" data-i18n="proof.check.8">Supporting documentation</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="engagement-note" data-i18n="proof.note">
+                Open to purchase or Joint Venture structures with qualified parties.
+            </div>
+
+            <div class="cta-center">
+                <button class="btn btn-primary" onclick="openModal()" data-i18n="proof.btn.request">Request Full Pack</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="container">
+        <h2 class="section-title" data-i18n="location.title">Location</h2>
+        <div class="location-map">
+            <img src="https://benkovski.netlify.app/assets/location/location-01.jpg" alt="Location" class="thumb" loading="lazy" data-gallery="location" data-index="0">
+            <img src="https://benkovski.netlify.app/assets/location/location-02.jpg" alt="Location" class="thumb" loading="lazy" data-gallery="location" data-index="1">
+        </div>
+        <div class="location-grid">
+            <div class="location-card">
+                <h3 data-i18n="location.card.1.title">Location</h3>
+                <p data-i18n="location.card.1.desc">Benkovski: 15 mins. to Plovdiv, 1h. 30mins. to Sofia.</p>
+            </div>
+            <div class="location-card">
+                <h3 data-i18n="location.card.2.title">Highway Access</h3>
+                <p data-i18n="location.card.2.desc">Easy connection to A1 highway</p>
+            </div>
+            <div class="location-card">
+                <h3 data-i18n="location.card.3.title">Zoning</h3>
+                <p data-i18n="location.card.3.desc">Residential zoning + building permits + utilities approvals secured</p>
+            </div>
+            <div class="location-card">
+                <h3 data-i18n="location.card.4.title">Environment</h3>
+                <p data-i18n="location.card.4.desc">Quiet residential area</p>
+            </div>
+            <div class="location-card">
+                <h3 data-i18n="location.card.5.title">Schools</h3>
+                <p data-i18n="location.card.5.desc">Kindergarten and primary school in Benkovski, high school and university options in Plovdiv</p>
+            </div>
+            <div class="location-card">
+                <h3 data-i18n="location.card.6.title">Shopping & Services</h3>
+                <p data-i18n="location.card.6.desc">Location amenities within 5mins, larger amenities within 15mins</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Teaser -->
+    <section class="gallery-teaser">
+        <div class="container">
+            <h2 class="section-title" data-i18n="galleryteaser.title">Gallery</h2>
+            <div class="gallery-grid">
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-01.jpg" alt="Gallery Teaser 1" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="0">
+                </a>
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-02.jpg" alt="Gallery Teaser 2" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="1">
+                </a>
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-03.jpg" alt="Gallery Teaser 3" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="2">
+                </a>
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-04.jpg" alt="Gallery Teaser 4" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="3">
+                </a>
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-05.jpg" alt="Gallery Teaser 5" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="4">
+                </a>
+                <a href="gallery.html" class="gallery-placeholder">
+                    <img src="https://benkovski.netlify.app/assets/teaser/t-06.jpg" alt="Gallery Teaser 6" class="thumb" loading="lazy" data-gallery="gallery-teaser" data-index="5">
+                </a>
+            </div>
+            <p class="gallery-note" data-i18n="galleryteaser.note">Full gallery and high-resolution materials are shared on request.</p>
+            <div class="gallery-buttons">
+                <a href="gallery.html" class="btn btn-navy" data-i18n="galleryteaser.btn.view">View Full Gallery</a>
+                <button class="btn btn-primary" onclick="openModal()" data-i18n="galleryteaser.btn.request">Request Full Pack</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-content">
+            <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+            <button class="lightbox-nav prev" type="button" aria-label="Previous">&#8249;</button>
+            <button class="lightbox-nav next" type="button" aria-label="Next">&#8250;</button>
+            <div class="lightbox-image-container">
+                <img class="lightbox-image" id="lightboxImage" alt="">
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <div class="contact-content">
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <div class="contact-info">
+                <p><strong data-i18n="contact.email">Email:</strong> <a href="mailto:info@YOURDOMAIN.com">info@YOURDOMAIN.com</a></p>
+                <p><strong data-i18n="contact.phone">Phone/WhatsApp:</strong> <a href="tel:+359893664545">+359 89 366 4545</a></p>
+            </div>
+            <button class="btn btn-primary" onclick="openModal()" data-i18n="contact.btn.request">Request Full Pack</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.disclaimer">Information is provided for discussion purposes and may change. No guarantees are made. Details available on request.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="requestModal" onclick="closeModalOnOutside(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            
+            <div id="formContainer">
+                <h2 data-i18n="modal.title">Request Full Pack</h2>
+                <p data-i18n="modal.subtitle">Fill out the form below to receive the complete documentation package.</p>
+                
+                <form id="requestForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="fullName" data-i18n="modal.fullname">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="modal.email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-i18n="modal.phone">Phone/WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company" data-i18n="modal.company">Company / Entity (optional)</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="approach" data-i18n="modal.approach">Intended Approach (optional)</label>
+                        <select id="approach" name="approach">
+                            <option value="" data-i18n="modal.select">Select...</option>
+                            <option value="purchase" data-i18n="modal.purchase">Purchase</option>
+                            <option value="jv" data-i18n="modal.jv">Joint Venture</option>
+                            <option value="not-sure" data-i18n="modal.notsure">Not sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="agreeRedistribute" name="agreeRedistribute" required>
+                        <label for="agreeRedistribute" data-i18n="modal.redistribute">I agree not to redistribute materials *</label>
+                    </div>
+
+                    <button type="submit" class="form-submit" data-i18n="modal.submit">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3 data-i18n="modal.thanks">Thank You!</h3>
+                <p data-i18n="modal.success">We'll email the Full Pack within 24 hours.</p>
+                <button class="btn btn-primary" onclick="closeModal()" style="margin-top: 20px;" data-i18n="modal.close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+const I18N = {
+  bg: {
+    "meta.index.title": "Възможност за жилищно строителство — Бенковски",
+    "meta.index.desc": "Имот в с. Бенковски — 15 мин. до Пловдив и 1 ч. 30 мин. до София. Променено предназначение за жилищно строителство, 3 парцела, предвиден достъп, осигурени съгласувания за ВиК и ел., включен архитектурен пакет.",
+    "meta.index.og_title": "Възможност за жилищно строителство — Бенковски",
+    "meta.index.og_desc": "Имот в с. Бенковски — 15 мин. до Пловдив и 1 ч. 30 мин. до София. Променено предназначение за жилищно строителство, 3 парцела, предвиден достъп, осигурени съгласувания за ВиК и ел., включен архитектурен пакет.",
+    "meta.gallery.title": "Галерия — Бенковски",
+    "meta.gallery.desc": "Галерия с визуализации, планове и документация за имот в Бенковски, подходящ за жилищно строителство.",
+    "meta.gallery.og_title": "Галерия — Бенковски",
+    "meta.gallery.og_desc": "Галерия с визуализации, планове и документация за имот в Бенковски, подходящ за жилищно строителство.",
+    "brand.name": "Benkovski\nRESIDENCES",
+    "lang.bg": "BG",
+    "lang.en": "EN",
+    "nav.overview": "Преглед",
+    "nav.snapshot": "Параметри",
+    "nav.proof": "Документи",
+    "nav.location": "Локация",
+    "nav.gallery": "Галерия",
+    "nav.contact": "Контакт",
+    "hero.title": "Рядка възможност за премиум застрояване близо до Пловдив",
+    "hero.subtitle": "Разположен в Бенковски, върху голям терен с жилищно предназначение, само на 15 минути от Пловдив и с удобен достъп до София, проектът предлага отлична основа за бутиково луксозно строителство, с три самостоятелни парцела, осигурен достъп, съгласувания за ВиК и електрозахранване и включен архитектурен идеен пакет.",
+    "hero.btn.gallery": "Виж галерията",
+    "hero.btn.request": "Заяви информационен пакет",
+    "snapshot.title": "Параметри на сделката",
+    "snapshot.location.label": "Локация",
+    "snapshot.location.value_html": "15 мин. от Пловдив<br>1 ч. 30 мин. от София",
+    "snapshot.zoning.label": "Статут",
+    "snapshot.zoning.value": "В регулация — за жилищно строителство (променено предназначение)",
+    "snapshot.lotsize.label": "Площ (кв.м)",
+    "snapshot.lotsize.value": "2500",
+    "snapshot.asking.label": "Цена (общо)",
+    "snapshot.asking.value": "€197.5K",
+    "snapshot.pricepersqm.label": "Цена/кв.м",
+    "snapshot.pricepersqm.value": "€79 / кв.м",
+    "snapshot.plots.label": "Парцели",
+    "snapshot.plots.value": "3 парцела",
+    "snapshot.road.label": "Достъп (път)",
+    "snapshot.road.value": "Предвиден",
+    "snapshot.utilities.label": "Съгласувания за присъединяване (ВиК и ел.)",
+    "snapshot.utilities.value": "Осигурени и документирани",
+    "snapshot.buildpermit.label": "Разрешение за строеж",
+    "snapshot.buildpermit.value": "Осигурено и документирано",
+    "snapshot.arch.label": "Архитектура",
+    "snapshot.arch.value": "Визуализации + архитектурни проекти (2 етажа)",
+    "snapshot.status.label": "Статус",
+    "snapshot.status.value": "Готов за купувач / партньор-строител",
+    "snapshot.docs.label": "Документация",
+    "snapshot.docs.value": "Пълен пакет при запитване",
+    "snapshot.note": "Подробната документация се предоставя при запитване.",
+    "proof.title": "Изпълнени ключови стъпки + Пълен пакет документи (при запитване)",
+    "proof.timeline.1": "Промяна на предназначението: земеделска земя → жилищно строителство — завършено",
+    "proof.timeline.2": "Имотът е разделен на 3 парцела",
+    "proof.timeline.3": "Път/достъп до всеки парцел — предвиден/дефиниран",
+    "proof.timeline.4": "Съгласуване/условия за присъединяване към ВиК — осигурени",
+    "proof.timeline.5": "Съгласуване/условия за присъединяване към ел. мрежа — осигурени",
+    "proof.timeline.6": "Разрешение за строеж — осигурено",
+    "proof.timeline.7": "Готов архитектурен пакет: визуализации и проекти за самостоятелни къщи на 2 етажа",
+    "proof.checklist.title": "Включено в пълния пакет",
+    "proof.check.1": "Документи за промяна на предназначението",
+    "proof.check.2": "Скици/извадки от кадастъра + идентификатори на парцелите",
+    "proof.check.3": "Документи за делба + план за достъп/улица",
+    "proof.check.4": "Съгласувания/условия за присъединяване (ВиК и ел.)",
+    "proof.check.5": "Разрешение за строеж",
+    "proof.check.6": "Пълен комплект визуализации",
+    "proof.check.7": "Етажни планове (2 етажа)",
+    "proof.check.8": "Допълнителни документи",
+    "proof.note": "Отворени сме за покупка или съвместно партньорство (JV) с подходящи кандидати.",
+    "proof.btn.request": "Заяви информационен пакет",
+    "location.title": "Локация",
+    "location.card.1.title": "Локация",
+    "location.card.1.desc": "Бенковски: 15 мин. до Пловдив, 1 ч. 30 мин. до София.",
+    "location.card.2.title": "Достъп до магистрала",
+    "location.card.2.desc": "Лесна и бърза връзка с A1 (АМ \"Тракия\").",
+    "location.card.3.title": "Статут и документи",
+    "location.card.3.desc": "Жилищно предназначение (в регулация) + разрешение за строеж + осигурени съгласувания за ВиК и ел. присъединяване.",
+    "location.card.4.title": "Среда",
+    "location.card.4.desc": "Тиха жилищна зона.",
+    "location.card.5.title": "Училища",
+    "location.card.5.desc": "Детска градина и начално училище в Бенковски; гимназия и университети в Пловдив.",
+    "location.card.6.title": "Магазини и услуги",
+    "location.card.6.desc": "Удобства до 5 мин.; по-големи обекти и услуги — до 15 мин.",
+    "galleryteaser.title": "Галерия",
+    "galleryteaser.note": "Пълната галерия и материалите с висока резолюция се предоставят при запитване.",
+    "galleryteaser.btn.view": "Виж цялата галерия",
+    "galleryteaser.btn.request": "Заяви информационен пакет",
+    "contact.title": "Контакт",
+    "contact.email": "Имейл:",
+    "contact.phone": "Телефон/WhatsApp:",
+    "contact.btn.request": "Заяви информационен пакет",
+    "footer.disclaimer": "Информацията е предоставена с цел дискусия и подлежи на промяна. Не се предоставят гаранции. Подробности — при запитване.",
+    "g.header.title": "Галерия — Бенковски",
+    "g.header.subtitle": "Визуализации, планове и разпределение на имота. Материали с висока резолюция и пълна документация — при запитване.",
+    "g.header.note": "Отворени сме за покупка или съвместно партньорство (JV).",
+    "g.nav.total": "Общ проект",
+    "g.nav.house1": "Къща 1",
+    "g.nav.house2": "Къща 2",
+    "g.nav.house3": "Къща 3",
+    "g.nav.blueprints": "Чертежи",
+    "g.nav.siteplan": "Ситуация",
+    "g.section.total.desc": "Визуализации и обща концепция за проекта.",
+    "g.section.house1.desc": "Визуализации за първата къща.",
+    "g.section.house2.desc": "Визуализации за втората къща.",
+    "g.section.house3.desc": "Визуализации за третата къща.",
+    "g.section.blueprints.title": "Чертежи (Етаж 1 и Етаж 2)",
+    "g.section.blueprints.desc": "Етажни планове и архитектурни чертежи.",
+    "g.section.siteplan.desc": "Ситуация, граници на парцелите и инфраструктура/достъп.",
+    "g.floating.request": "Заяви информационен пакет",
+    "modal.title": "Заяви информационен пакет",
+    "modal.subtitle": "Попълнете формата, за да получите пълния пакет с документация.",
+    "modal.fullname": "Име и фамилия *",
+    "modal.email": "Имейл *",
+    "modal.phone": "Телефон/WhatsApp *",
+    "modal.company": "Компания / ЮЛ (по желание)",
+    "modal.approach": "Предпочитана структура (по желание)",
+    "modal.select": "Изберете...",
+    "modal.purchase": "Покупка",
+    "modal.jv": "Съвместно партньорство (JV)",
+    "modal.notsure": "Не съм сигурен/а",
+    "modal.redistribute": "Съгласявам се да не разпространявам материалите *",
+    "modal.submit": "Изпрати запитване",
+    "modal.thanks": "Благодарим!",
+    "modal.success": "Ще изпратим информационния пакет до 24 часа.",
+    "modal.close": "Затвори",
+    "mailto.subject": "Заявка за информационен пакет — Бенковски"
+  },
+  en: {
+    "meta.index.title": "Residential Development Opportunity — Benkovski",
+    "meta.index.desc": "Land in Benkovski, 15 min from Plovdiv and 1h30 from Sofia. Rezoned to residential, subdivided into 3 plots, road access planned, approvals secured, architect package included.",
+    "meta.index.og_title": "Residential Development Opportunity — Benkovski",
+    "meta.index.og_desc": "Land in Benkovski, 15 min from Plovdiv and 1h30 from Sofia. Rezoned to residential, subdivided into 3 plots, road access planned, approvals secured, architect package included.",
+    "meta.gallery.title": "Project Gallery — Benkovski",
+    "meta.gallery.desc": "Project gallery for Benkovski residential development: renderings, plans, and site breakdown. High-resolution materials shared on request.",
+    "meta.gallery.og_title": "Project Gallery — Benkovski",
+    "meta.gallery.og_desc": "Project gallery for Benkovski residential development: renderings, plans, and site breakdown. High-resolution materials shared on request.",
+    "brand.name": "Benkovski\nRESIDENCES",
+    "lang.bg": "BG",
+    "lang.en": "EN",
+    "nav.overview": "Overview",
+    "nav.snapshot": "Parameters",
+    "nav.proof": "Documents",
+    "nav.location": "Location",
+    "nav.gallery": "Gallery",
+    "nav.contact": "Contact",
+    "hero.title": "A rare premium development opportunity near Plovdiv",
+    "hero.subtitle": "Set in Benkovski on a large rezoned site just 15 minutes from Plovdiv with convenient access to Sofia, this three-plot project offers the ideal foundation for a boutique luxury residential development, with road access, utility approvals, and an architect concept package already secured.",
+    "hero.btn.gallery": "View Gallery",
+    "hero.btn.request": "Request Full Pack",
+    "snapshot.title": "Deal Snapshot",
+    "snapshot.location.label": "Location",
+    "snapshot.location.value_html": "15min from Plovdiv<br>1h30min from Sofia",
+    "snapshot.zoning.label": "Zoning",
+    "snapshot.zoning.value": "Residential (rezoned from agricultural)",
+    "snapshot.lotsize.label": "Lot Size (SQM)",
+    "snapshot.lotsize.value": "2500",
+    "snapshot.asking.label": "Asking Price (Total)",
+    "snapshot.asking.value": "€197.5K",
+    "snapshot.pricepersqm.label": "Price per SQM",
+    "snapshot.pricepersqm.value": "€79 / sq m",
+    "snapshot.plots.label": "Plots",
+    "snapshot.plots.value": "3 plots",
+    "snapshot.road.label": "Road Access",
+    "snapshot.road.value": "Planned",
+    "snapshot.utilities.label": "Water and Electricity Approval",
+    "snapshot.utilities.value": "Secured & documented",
+    "snapshot.buildpermit.label": "Building Permit",
+    "snapshot.buildpermit.value": "Secured & documented",
+    "snapshot.arch.label": "Architecture",
+    "snapshot.arch.value": "Renderings + 2-floor blueprints",
+    "snapshot.status.label": "Status",
+    "snapshot.status.value": "Ready for buyer / development partner",
+    "snapshot.docs.label": "Documentation",
+    "snapshot.docs.value": "Full Pack available on request",
+    "snapshot.note": "Detailed documentation available after request",
+    "proof.title": "De-risking Completed + Full Pack (On Request)",
+    "proof.timeline.1": "Agricultural → Residential rezoning completed",
+    "proof.timeline.2": "Parcel subdivided into 3 plots",
+    "proof.timeline.3": "Road access defined for each plot",
+    "proof.timeline.4": "Water approval/permit secured",
+    "proof.timeline.5": "Electricity approval/permit secured",
+    "proof.timeline.6": "Building permit secured",
+    "proof.timeline.7": "Architectural renderings + 2-floor detached home blueprints completed",
+    "proof.checklist.title": "Included in the Full Pack",
+    "proof.check.1": "Rezoning decision documents",
+    "proof.check.2": "Cadastral extracts / plot identifiers",
+    "proof.check.3": "Subdivision documentation + road access plan",
+    "proof.check.4": "Utility approvals: water + electricity",
+    "proof.check.5": "Building permit",
+    "proof.check.6": "Full renderings set",
+    "proof.check.7": "Floor plans (2 floors)",
+    "proof.check.8": "Supporting documentation",
+    "proof.note": "Open to purchase or Joint Venture structures with qualified parties.",
+    "proof.btn.request": "Request Full Pack",
+    "location.title": "Location",
+    "location.card.1.title": "Location",
+    "location.card.1.desc": "Benkovski, 15 mins to Plovdiv, 1h30mins to Sofia",
+    "location.card.2.title": "Highway Access",
+    "location.card.2.desc": "Easy connection to A1 highway",
+    "location.card.3.title": "Zoning",
+    "location.card.3.desc": "Residential zoning + building permits + utilities approvals secured",
+    "location.card.4.title": "Environment",
+    "location.card.4.desc": "Quiet residential area",
+    "location.card.5.title": "Schools",
+    "location.card.5.desc": "Kindergarten and primary school in Benkovski, high school and university options in Plovdiv",
+    "location.card.6.title": "Shopping & Services",
+    "location.card.6.desc": "Location amenities within 5mins, larger amenities within 15mins",
+    "galleryteaser.title": "Gallery",
+    "galleryteaser.note": "Full gallery and high-resolution materials are shared on request.",
+    "galleryteaser.btn.view": "View Full Gallery",
+    "galleryteaser.btn.request": "Request Full Pack",
+    "contact.title": "Contact",
+    "contact.email": "Email:",
+    "contact.phone": "Phone/WhatsApp:",
+    "contact.btn.request": "Request Full Pack",
+    "footer.disclaimer": "Information is provided for discussion purposes and may change. No guarantees are made. Details available on request.",
+    "g.header.title": "Project Gallery — Benkovski",
+    "g.header.subtitle": "Renderings, plans, and site breakdown. High-resolution materials and full documents shared on request.",
+    "g.header.note": "Open to purchase or Joint Venture structures",
+    "g.nav.total": "Total Development",
+    "g.nav.house1": "House 1",
+    "g.nav.house2": "House 2",
+    "g.nav.house3": "House 3",
+    "g.nav.blueprints": "Blueprints",
+    "g.nav.siteplan": "Site Plan",
+    "g.section.total.desc": "Comprehensive site renderings showing the complete residential development vision.",
+    "g.section.house1.desc": "Detailed architectural visualizations for the first residential unit.",
+    "g.section.house2.desc": "Detailed architectural visualizations for the second residential unit.",
+    "g.section.house3.desc": "Detailed architectural visualizations for the third residential unit.",
+    "g.section.blueprints.title": "Blueprints (Floor 1 & Floor 2)",
+    "g.section.blueprints.desc": "Technical architectural drawings showing detailed floor plans and specifications.",
+    "g.section.siteplan.desc": "Comprehensive site layout, plot boundaries, and development infrastructure documentation.",
+    "g.floating.request": "Request Full Pack",
+    "modal.title": "Request Full Pack",
+    "modal.subtitle": "Fill out the form below to receive the complete documentation package.",
+    "modal.fullname": "Full Name *",
+    "modal.email": "Email *",
+    "modal.phone": "Phone/WhatsApp *",
+    "modal.company": "Company / Entity (optional)",
+    "modal.approach": "Intended Approach (optional)",
+    "modal.select": "Select...",
+    "modal.purchase": "Purchase",
+    "modal.jv": "Joint Venture",
+    "modal.notsure": "Not sure",
+    "modal.redistribute": "I agree not to redistribute materials *",
+    "modal.submit": "Submit Request",
+    "modal.thanks": "Thank You!",
+    "modal.success": "We'll email the Full Pack within 24 hours.",
+    "modal.close": "Close",
+    "mailto.subject": "Request Full Pack — Benkovski Residential Development"
+  }
+};
+
+function getPageKeyPrefix() {
+  const path = (location.pathname.split("/").pop() || "").toLowerCase();
+  return path.includes("gallery") ? "gallery" : "index";
+}
+
+function setMeta(lang) {
+  const prefix = getPageKeyPrefix();
+  const titleKey = `meta.${prefix}.title`;
+  const descKey = `meta.${prefix}.desc`;
+  const ogTitleKey = `meta.${prefix}.og_title`;
+  const ogDescKey = `meta.${prefix}.og_desc`;
+
+  const t = I18N[lang];
+  if (t?.[titleKey]) document.title = t[titleKey];
+
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc && t?.[descKey]) desc.setAttribute("content", t[descKey]);
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && t?.[ogTitleKey]) ogTitle.setAttribute("content", t[ogTitleKey]);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc && t?.[ogDescKey]) ogDesc.setAttribute("content", t[ogDescKey]);
+}
+
+function applyLanguage(lang) {
+  if (!I18N[lang]) lang = "bg";
+  localStorage.setItem("lang", lang);
+  document.documentElement.setAttribute("lang", lang);
+  setMeta(lang);
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const val = I18N[lang][key];
+    if (val !== undefined) el.textContent = val;
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach(el => {
+    const key = el.getAttribute("data-i18n-html");
+    const val = I18N[lang][key];
+    if (val !== undefined) el.innerHTML = val;
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const val = I18N[lang][key];
+    if (val !== undefined) el.setAttribute("placeholder", val);
+  });
+
+  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-lang-btn") === lang);
+  });
+}
+
+function initLanguage() {
+  const lang = localStorage.getItem("lang") || "bg";
+  applyLanguage(lang);
+}
+
+function bindLangButtons() {
+  const bgBtn = document.getElementById("langBg");
+  const enBtn = document.getElementById("langEn");
+  if (bgBtn) bgBtn.addEventListener("click", () => applyLanguage("bg"));
+  if (enBtn) enBtn.addEventListener("click", () => applyLanguage("en"));
+}
+
+function safeInit() {
+  bindLangButtons();
+  initLanguage();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", safeInit);
+} else {
+  safeInit();
+}
+    </script>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeNav() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        function openModal() {
+            const modal = document.getElementById('requestModal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('requestModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            setTimeout(() => {
+                document.getElementById('requestForm').reset();
+                document.getElementById('formContainer').style.display = 'block';
+                document.getElementById('successMessage').classList.remove('active');
+            }, 300);
+        }
+
+        function closeModalOnOutside(event) {
+            if (event.target.id === 'requestModal') {
+                closeModal();
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            const lang = localStorage.getItem('lang') || 'bg';
+            const subject = encodeURIComponent(I18N[lang]['mailto.subject']);
+            const body = encodeURIComponent(
+                `${I18N[lang]['modal.fullname']}: ${data.fullName}\n` +
+                `${I18N[lang]['modal.email']}: ${data.email}\n` +
+                `${I18N[lang]['modal.phone']}: ${data.phone}\n` +
+                `${I18N[lang]['modal.company']}: ${data.company || 'Not provided'}\n` +
+                `${I18N[lang]['modal.approach']}: ${data.approach || 'Not provided'}\n\n` +
+                `${I18N[lang]['modal.redistribute']}`
+            );
+            
+            const mailtoLink = `mailto:info@YOURDOMAIN.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+            
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('successMessage').classList.add('active');
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+
+    <script>
+        (function() {
+            function initLightbox() {
+                const lightbox = document.getElementById('lightbox');
+                if (!lightbox) return;
+
+                const lightboxImage = document.getElementById('lightboxImage');
+                const lightboxCaption = document.getElementById('lightboxCaption');
+                const lightboxCounter = document.getElementById('lightboxCounter');
+                const prevBtn = lightbox.querySelector('.lightbox-nav.prev');
+                const nextBtn = lightbox.querySelector('.lightbox-nav.next');
+                const closeBtn = lightbox.querySelector('.lightbox-close');
+
+                const galleryMap = {};
+                const images = document.querySelectorAll('img[data-gallery]');
+
+                images.forEach(img => {
+                    const gallery = img.dataset.gallery;
+                    if (!galleryMap[gallery]) galleryMap[gallery] = [];
+                    const index = galleryMap[gallery].length;
+                    galleryMap[gallery].push({ src: img.src, alt: img.alt || '' });
+                    img.dataset.index = index;
+                    img.style.cursor = 'pointer';
+                    img.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        openLightbox(gallery, index);
+                    });
+                });
+
+                let currentGallery = null;
+                let currentIndex = 0;
+
+                function openLightbox(gallery, index) {
+                    currentGallery = gallery;
+                    currentIndex = index;
+                    updateLightbox();
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeLightbox() {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+
+                function updateLightbox() {
+                    const items = galleryMap[currentGallery] || [];
+                    if (!items.length) return;
+                    const item = items[currentIndex];
+                    lightboxImage.src = item.src;
+                    lightboxImage.alt = item.alt;
+                    lightboxCaption.textContent = item.alt || '';
+                    lightboxCounter.textContent = `${currentIndex + 1} / ${items.length}`;
+                    const showNav = items.length > 1;
+                    prevBtn.style.display = showNav ? 'flex' : 'none';
+                    nextBtn.style.display = showNav ? 'flex' : 'none';
+                }
+
+                function navigate(step) {
+                    const items = galleryMap[currentGallery] || [];
+                    if (items.length < 2) return;
+                    currentIndex = (currentIndex + step + items.length) % items.length;
+                    updateLightbox();
+                }
+
+                lightbox.addEventListener('click', (event) => {
+                    if (event.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+
+                closeBtn.addEventListener('click', closeLightbox);
+                prevBtn.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    navigate(-1);
+                });
+                nextBtn.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    navigate(1);
+                });
+                lightboxImage.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    navigate(1);
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (!lightbox.classList.contains('active')) return;
+                    if (event.key === 'Escape') closeLightbox();
+                    if (event.key === 'ArrowLeft') navigate(-1);
+                    if (event.key === 'ArrowRight') navigate(1);
+                });
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initLightbox);
+            } else {
+                initLightbox();
+            }
+        })();
+    </script>
+
+</body>
+</html>
