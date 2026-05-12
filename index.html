@@ -466,6 +466,8 @@
             border: 2px solid var(--gray-border);
         }
 
+        
+
         .location-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -938,7 +940,7 @@ RESIDENCES</div>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.zoning.label">Zoning</h3>
-                <p data-i18n="snapshot.zoning.value">Residential (rezoned from agricultural)</p>
+                <p data-i18n="snapshot.zoning.value">Residential Zoning</p>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.lotsize.label">Lot Size (SQM)</h3>
@@ -954,7 +956,7 @@ RESIDENCES</div>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.plots.label">Plots</h3>
-                <p data-i18n="snapshot.plots.value">3 plots</p>
+                <p data-i18n="snapshot.plots.value">3 Plots</p>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.road.label">Road Access</h3>
@@ -966,19 +968,19 @@ RESIDENCES</div>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.buildpermit.label">Building Permit</h3>
-                <p data-i18n="snapshot.buildpermit.value">Secured & documented</p>
+                <p data-i18n="snapshot.buildpermit.value">Secured & Documented</p>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.arch.label">Architecture</h3>
-                <p data-i18n="snapshot.arch.value">Renderings + 2-floor blueprints</p>
+                <p data-i18n="snapshot.arch.value">Renderings + Blueprints</p>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.status.label">Status</h3>
-                <p data-i18n="snapshot.status.value">Ready for buyer / development partner</p>
+                <p data-i18n="snapshot.status.value">Ready to Build</p>
             </div>
             <div class="snapshot-card">
                 <h3 data-i18n="snapshot.docs.label">Documentation</h3>
-                <p data-i18n="snapshot.docs.value">Full Pack available on request</p>
+                <p data-i18n="snapshot.docs.value">Full Pack Available on Request</p>
             </div>
         </div>
         <p class="snapshot-note" data-i18n="snapshot.note">Detailed documentation available after request.</p>
@@ -995,7 +997,7 @@ RESIDENCES</div>
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h4 data-i18n="proof.timeline.1">Agricultural → Residential rezoning completed</h4>
+                            <h4 data-i18n="proof.timeline.1">Residential rezoning completed</h4>
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -1036,50 +1038,15 @@ RESIDENCES</div>
                     </div>
                 </div>
 
-                <!-- Right: Checklist -->
-                <div>
-                    <h3 style="margin-bottom: 25px; font-size: 20px; color: var(--navy);" data-i18n="proof.checklist.title">Included in the Full Pack</h3>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.1">Rezoning decision documents</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.2">Cadastral extracts / plot identifiers</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.3">Subdivision documentation + road access plan</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.4">Utility approvals: water + electricity</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.5">Building permit</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.6">Full renderings set</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.7">Floor plans (2 floors)</div>
-                    </div>
-                    <div class="checklist-item">
-                        <div class="checklist-icon">✓</div>
-                        <div class="checklist-text" data-i18n="proof.check.8">Supporting documentation</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="engagement-note" data-i18n="proof.note">
-                Open to purchase or Joint Venture structures with qualified parties.
+                
             </div>
 
             <div class="cta-center">
                 <button class="btn btn-primary" onclick="openModal()" data-i18n="proof.btn.request">Request Full Pack</button>
+            </div>
+
+            <div class="engagement-note" data-i18n="proof.note">
+                Open to purchase or Joint Venture structures with qualified parties.
             </div>
         </div>
     </section>
@@ -1098,7 +1065,7 @@ RESIDENCES</div>
             </div>
             <div class="location-card">
                 <h3 data-i18n="location.card.2.title">Highway Access</h3>
-                <p data-i18n="location.card.2.desc">Easy connection to A1 highway</p>
+                <p data-i18n="location.card.2.desc">Quick connection to A1 highway</p>
             </div>
             <div class="location-card">
                 <h3 data-i18n="location.card.3.title">Zoning</h3>
@@ -1110,11 +1077,11 @@ RESIDENCES</div>
             </div>
             <div class="location-card">
                 <h3 data-i18n="location.card.5.title">Schools</h3>
-                <p data-i18n="location.card.5.desc">Kindergarten and primary school in Benkovski, high school and university options in Plovdiv</p>
+                <p data-i18n="location.card.5.desc">Kindergarten and primary school in Benkovski, high school and university options minutes away</p>
             </div>
             <div class="location-card">
                 <h3 data-i18n="location.card.6.title">Shopping & Services</h3>
-                <p data-i18n="location.card.6.desc">Location amenities within 5mins, larger amenities within 15mins</p>
+                <p data-i18n="location.card.6.desc">Family fun, parks, and daily conveniences right at your doorstep</p>
             </div>
         </div>
     </section>
@@ -1270,7 +1237,7 @@ const I18N = {
     "snapshot.location.label": "Локация",
     "snapshot.location.value_html": "15 мин. от Пловдив<br>1 ч. 30 мин. от София",
     "snapshot.zoning.label": "Статут",
-    "snapshot.zoning.value": "В регулация — за жилищно строителство (променено предназначение)",
+    "snapshot.zoning.value": "Жилищно Зониране",
     "snapshot.lotsize.label": "Площ (кв.м)",
     "snapshot.lotsize.value": "2500",
     "snapshot.asking.label": "Цена (общо)",
@@ -1278,22 +1245,22 @@ const I18N = {
     "snapshot.pricepersqm.label": "Цена/кв.м",
     "snapshot.pricepersqm.value": "€79 / кв.м",
     "snapshot.plots.label": "Парцели",
-    "snapshot.plots.value": "3 парцела",
+    "snapshot.plots.value": "3 Парцела",
     "snapshot.road.label": "Достъп (път)",
-    "snapshot.road.value": "Предвиден",
+    "snapshot.road.value": "Осигурен и документиран",
     "snapshot.utilities.label": "Съгласувания за присъединяване (ВиК и ел.)",
     "snapshot.utilities.value": "Осигурени и документирани",
     "snapshot.buildpermit.label": "Разрешение за строеж",
-    "snapshot.buildpermit.value": "Осигурено и документирано",
+    "snapshot.buildpermit.value": "Осигурено и Документирано",
     "snapshot.arch.label": "Архитектура",
-    "snapshot.arch.value": "Визуализации + архитектурни проекти (2 етажа)",
+    "snapshot.arch.value": "Визуализации + Чертежи",
     "snapshot.status.label": "Статус",
-    "snapshot.status.value": "Готов за купувач / партньор-строител",
+    "snapshot.status.value": "Готов за Строеж",
     "snapshot.docs.label": "Документация",
-    "snapshot.docs.value": "Пълен пакет при запитване",
+    "snapshot.docs.value": "Пълен Пакет при Запитване",
     "snapshot.note": "Подробната документация се предоставя при запитване.",
     "proof.title": "Изпълнени ключови стъпки + Пълен пакет документи (при запитване)",
-    "proof.timeline.1": "Промяна на предназначението: земеделска земя → жилищно строителство — завършено",
+    "proof.timeline.1": "Промяна на предназначението → жилищно строителство — завършено",
     "proof.timeline.2": "Имотът е разделен на 3 парцела",
     "proof.timeline.3": "Път/достъп до всеки парцел — предвиден/дефиниран",
     "proof.timeline.4": "Съгласуване/условия за присъединяване към ВиК — осигурени",
@@ -1315,15 +1282,15 @@ const I18N = {
     "location.card.1.title": "Локация",
     "location.card.1.desc": "Бенковски: 15 мин. до Пловдив, 1 ч. 30 мин. до София.",
     "location.card.2.title": "Достъп до магистрала",
-    "location.card.2.desc": "Лесна и бърза връзка с A1 (АМ \"Тракия\").",
+    "location.card.2.desc": "Бърза връзка с A1 (АМ \"Тракия\").",
     "location.card.3.title": "Статут и документи",
     "location.card.3.desc": "Жилищно предназначение (в регулация) + разрешение за строеж + осигурени съгласувания за ВиК и ел. присъединяване.",
     "location.card.4.title": "Среда",
     "location.card.4.desc": "Тиха жилищна зона.",
     "location.card.5.title": "Училища",
-    "location.card.5.desc": "Детска градина и начално училище в Бенковски; гимназия и университети в Пловдив.",
+    "location.card.5.desc": "Детска градина и начално училище в Бенковски; гимназия и университети на минути разстояние.",
     "location.card.6.title": "Магазини и услуги",
-    "location.card.6.desc": "Удобства до 5 мин.; по-големи обекти и услуги — до 15 мин.",
+    "location.card.6.desc": "Семейни активности, паркове и удобства на една крачка.",
     "galleryteaser.title": "Галерия",
     "galleryteaser.note": "Пълната галерия и материалите с висока резолюция се предоставят при запитване.",
     "galleryteaser.btn.view": "Виж цялата галерия",
@@ -1394,7 +1361,7 @@ const I18N = {
     "snapshot.location.label": "Location",
     "snapshot.location.value_html": "15min from Plovdiv<br>1h30min from Sofia",
     "snapshot.zoning.label": "Zoning",
-    "snapshot.zoning.value": "Residential (rezoned from agricultural)",
+    "snapshot.zoning.value": "Residential Zoning",
     "snapshot.lotsize.label": "Lot Size (SQM)",
     "snapshot.lotsize.value": "2500",
     "snapshot.asking.label": "Asking Price (Total)",
@@ -1402,22 +1369,22 @@ const I18N = {
     "snapshot.pricepersqm.label": "Price per SQM",
     "snapshot.pricepersqm.value": "€79 / sq m",
     "snapshot.plots.label": "Plots",
-    "snapshot.plots.value": "3 plots",
+    "snapshot.plots.value": "3 Plots",
     "snapshot.road.label": "Road Access",
-    "snapshot.road.value": "Planned",
+    "snapshot.road.value": "Secured & documented",
     "snapshot.utilities.label": "Water and Electricity Approval",
     "snapshot.utilities.value": "Secured & documented",
     "snapshot.buildpermit.label": "Building Permit",
-    "snapshot.buildpermit.value": "Secured & documented",
+    "snapshot.buildpermit.value": "Secured & Documented",
     "snapshot.arch.label": "Architecture",
-    "snapshot.arch.value": "Renderings + 2-floor blueprints",
+    "snapshot.arch.value": "Renderings + Blueprints",
     "snapshot.status.label": "Status",
-    "snapshot.status.value": "Ready for buyer / development partner",
+    "snapshot.status.value": "Ready to Build",
     "snapshot.docs.label": "Documentation",
-    "snapshot.docs.value": "Full Pack available on request",
+    "snapshot.docs.value": "Full Pack Available on Request",
     "snapshot.note": "Detailed documentation available after request",
     "proof.title": "De-risking Completed + Full Pack (On Request)",
-    "proof.timeline.1": "Agricultural → Residential rezoning completed",
+    "proof.timeline.1": "Residential rezoning completed",
     "proof.timeline.2": "Parcel subdivided into 3 plots",
     "proof.timeline.3": "Road access defined for each plot",
     "proof.timeline.4": "Water approval/permit secured",
@@ -1439,15 +1406,15 @@ const I18N = {
     "location.card.1.title": "Location",
     "location.card.1.desc": "Benkovski, 15 mins to Plovdiv, 1h30mins to Sofia",
     "location.card.2.title": "Highway Access",
-    "location.card.2.desc": "Easy connection to A1 highway",
+    "location.card.2.desc": "Quick connection to A1 highway",
     "location.card.3.title": "Zoning",
     "location.card.3.desc": "Residential zoning + building permits + utilities approvals secured",
     "location.card.4.title": "Environment",
     "location.card.4.desc": "Quiet residential area",
     "location.card.5.title": "Schools",
-    "location.card.5.desc": "Kindergarten and primary school in Benkovski, high school and university options in Plovdiv",
+    "location.card.5.desc": "Kindergarten and primary school in Benkovski, high school and university options minutes away",
     "location.card.6.title": "Shopping & Services",
-    "location.card.6.desc": "Location amenities within 5mins, larger amenities within 15mins",
+    "location.card.6.desc": "Family fun, parks, and daily conveniences right at your doorstep",
     "galleryteaser.title": "Gallery",
     "galleryteaser.note": "Full gallery and high-resolution materials are shared on request.",
     "galleryteaser.btn.view": "View Full Gallery",
